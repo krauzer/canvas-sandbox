@@ -1,0 +1,13 @@
+{
+  "name": "canvas-sandbox",
+  "version": "0.0.1",
+  "description": "Sandox to play with canvas scripts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krauzer/canvas-sandbox.git"
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+
+}
