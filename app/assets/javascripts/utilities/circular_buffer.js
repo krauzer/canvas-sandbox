@@ -23,6 +23,12 @@ class CircularBuffer {
     this.openIndex = (this.lastFilledIndex + 1)%this.maxSize;
   }
 
+  forEach(callback){
+    for (let i = 0; i < this.currentSize; i++) {
+      callback(this.get(i));
+    }
+  }
+
 
 }
 
