@@ -1,8 +1,6 @@
 'use strict';
-
 let Timer = require("./timer.js");
 let CircularBuffer = require("./circular_buffer.js");
-
 
 class Monitor {
 
@@ -17,8 +15,7 @@ class Monitor {
     let bufferSize = this.buffer.size();
     let sum = 0;
     this.buffer.forEach((val) => {sum += val});
-    this.fps = (bufferSize / sum) * 1000
-
+    this.fps = (bufferSize / sum) * 1000;
     this.timer.start();
   }
 
@@ -27,8 +24,5 @@ class Monitor {
   }
 
 }
-
-
-
 
 module.exports = Monitor;
