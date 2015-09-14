@@ -14,6 +14,11 @@ body{
   background-color: white;
 }
 
-.stats{
-
+#stats{
+  bottom:10px;
+  right:5px;
+  position: fixed;
+  background-color:#D3D3D3;
+  width: 100px;
+  height: 50px;
 }
