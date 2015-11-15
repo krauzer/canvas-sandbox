@@ -1,6 +1,6 @@
 'use strict';
 
-export const requestAnimationFrame = function(callback, element){
+export function requestAnimationFrame(callback, element){
 
             let requestAnimationFrame =
                 window.requestAnimationFrame        ||
