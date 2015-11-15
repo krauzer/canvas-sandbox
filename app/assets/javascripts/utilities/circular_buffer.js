@@ -1,4 +1,4 @@
-class CircularBuffer {
+export default class CircularBuffer {
 
   constructor(length){
     this.buffer = new Int32Array(length);
@@ -30,5 +30,3 @@ class CircularBuffer {
   }
 
 }
-
-module.exports = CircularBuffer;

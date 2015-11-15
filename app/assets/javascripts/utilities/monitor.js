@@ -1,8 +1,8 @@
 'use strict';
-let Timer = require("./timer.js");
-let CircularBuffer = require("./circular_buffer.js");
+import Timer from './timer.js';
+import CircularBuffer from './circular_buffer.js';
 
-class Monitor {
+export default class Monitor {
 
   constructor(){
     this.buffer = new CircularBuffer(20);
@@ -24,5 +24,3 @@ class Monitor {
   }
 
 }
-
-module.exports = Monitor;
