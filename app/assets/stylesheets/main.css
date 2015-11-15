@@ -9,9 +9,7 @@ body{
 }
 
 #canvas{
-  width: 640px;
-  height: 640px;
-  background-color: white;
+   background-color: white;
 }
 
 #stats{
@@ -19,6 +17,4 @@ body{
   right:5px;
   position: fixed;
   background-color:#D3D3D3;
-  width: 100px;
-  height: 50px;
 }

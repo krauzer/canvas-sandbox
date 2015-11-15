@@ -1,4 +1,4 @@
-class Timer {
+export default class Timer {
   constructor() {
     this.startTime = 0;
   }
@@ -11,5 +11,3 @@ class Timer {
     return Date.now() - this.startTime;
   }
 }
-
-module.exports = Timer;
