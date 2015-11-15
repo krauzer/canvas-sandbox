@@ -20,3 +20,12 @@ export function requestAnimationFrame(callback, element){
 
             return requestAnimationFrame.call(window, callback, element);
         }
+
+export function watchCanvas(statsId, monitor) {
+          monitor.newFrame();
+          const stats = document.getElementById(statsId),
+              context = stats.getContext("2d");
+          context.font = "12px serif";
+          context.clearRect(0, 0, canvas.width, canvas.height);
+          context.fillText(monitor.log() + " FPS", 25, 25);
+        }
