@@ -6,7 +6,10 @@
     "type": "git",
     "url": "https://github.com/krauzer/canvas-sandbox.git"
   },
-  "scripts": {},
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack-dev-server --progress --colors",
+    "build": "./node_modules/.bin/webpack -d --progress"
+    },
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.2.1",
