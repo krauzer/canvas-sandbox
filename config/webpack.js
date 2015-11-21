@@ -2,13 +2,15 @@ var webpack = require('webpack');
 var path = require('path');
 var nodeModulesPath = path.resolve("./", 'node_modules');
 var mainPath = path.resolve("./", "app","assets","javascripts", "main.js");
+var buildPath = path.resolve("./", "build")
 
+console.log(path.resolve("./"))
 module.exports = function(env){
 
   var webpackConfig = {
     entry:  mainPath,
     output: {
-      path: __dirname,
+      path: buildPath,
       filename: "build.js"
     },
     plugins: [],
