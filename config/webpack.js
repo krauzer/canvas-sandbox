@@ -16,7 +16,7 @@ module.exports = function(env){
       loaders: [
         { test: /\.html$/, loader: "html"},
         { test: /\.css$/, loader: 'style!css'},
-        { test: /\.js$/, loader: 'babel-loader?stage=0', exclude: /node_modules/}
+        { test: /\.js$/, loader: 'babel?presets[]=es2015', exclude: /node_modules/}
       ]
     },
     resolve: {
