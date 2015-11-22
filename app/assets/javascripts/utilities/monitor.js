@@ -14,7 +14,7 @@ export default class Monitor {
     this.buffer.add(this.timer.stop());
     let bufferSize = this.buffer.size();
     let sum = 0;
-    this.buffer.forEach((val) => {sum += val});
+    this.buffer.forEach((val) => {sum += val;});
     this.fps = (bufferSize / sum) * 1000;
     this.timer.start();
   }
